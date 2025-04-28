@@ -1,0 +1,120 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    /*o "none" neste "list-style" vai tirar os pontinhos que ficam em cada lista*/
+    list-style: none;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root{
+--verde: #CBB927;
+--amarelo: #ffa300;
+--laranja: #d95301;
+--laranjaclaro: #fdd673;
+
+}
+/classes reutilizáveis/
+.container{
+    max-width: 1400px;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+
+.login{
+    padding: 10px 25px;
+    background-color: var(--verde);
+    margin: 0 35px;
+    font-size: 20px;
+    font-size: white;  
+}
+/classes do site/
+/A Nav é uma tag/
+nav{
+    display: flex;
+    justify-content: space-between;
+    /*aqui não funcionou a centralização da logo*/
+    align-items: center;
+    padding: 20px 0;
+}
+
+/*Como é uma classe, precisamos do ponto*/
+.logo a{
+    font-size: 40px;
+    /grossura da fonte/
+    font-weight: bold;
+}
+.logo .parte1{
+    color: var(--verde);
+    font-size: 40px;
+}
+
+.logo .parte2{
+    color: var(--laranja);
+    font-size: 40px;
+}
+
+
+/*  */
+.background-login {
+    background-color: #FEECCC; /* o tom de laranja claro (ajuste conforme o seu) */
+    width: 400px; /* ou o tamanho que você quiser */
+    min-height: 100%; /* altura total da tela */
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.ul .email{
+    border: 2px solid var(--laranja);
+    border-radius: 10px;
+    padding: 10px 25px;
+    background-color: white;
+    margin: 10px 35px 20px 35px; /* margem em cima, direita, embaixo e esquerda */
+    font-size: 20px;
+    color: var(--verde); 
+    width: 300px;
+ }
+
+ .ul .senha{
+    border: 2px solid var(--laranja);
+    border-radius: 10px;
+    padding: 10px 25px;
+    background-color: white;
+    margin: 0 35px 30px 35px; /* margem maior embaixo para distanciar mais */
+    font-size: 20px;
+    color: var(--verde); 
+    width: 300px;
+ }
+
+ .ul .login{
+    color:white;
+    border: none;
+    width: 300px;
+    /*para arredondar as bordas*/
+    border-radius: 10px;
+    cursor: pointer;/* para ficar a mãozinha quando o mouse passar por cima do botão */
+ }
+
+ .ul .textologin{
+    color: var(--verde);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .container_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* altura total da tela */
+    list-style: none;
+ }
