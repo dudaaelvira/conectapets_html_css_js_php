@@ -15,7 +15,7 @@ body{
 --verde: #CBB927;
 --amarelo: #ffa300;
 --laranja: #d95301;
---laranjaclaro: #fdd673;
+--laranjaclaro:#FEECCC;
 
 }
 /classes reutilizáveis/
@@ -58,8 +58,10 @@ nav{
     font-size: 40px;
 }
 
+main{
+    position: relative;
+}
 
-/*  */
 .background-login {
     background-color: #FEECCC; /* o tom de laranja claro (ajuste conforme o seu) */
     width: 400px; /* ou o tamanho que você quiser */
@@ -69,6 +71,7 @@ nav{
     align-items: center;
     justify-content: center;
     padding: 40px;
+   /* position: relative;*/
 }
 
 .ul .email{
@@ -115,6 +118,40 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* altura total da tela */
+    height: 80vh; /* altura total da tela */
     list-style: none;
+ }
+
+ main .main-img-esquerda .main-img-direita{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 500px; /* ajuste conforme necessário */
+    background-color: #fdf0da; /* cor de fundo igual ao do site */
+    padding: 0 30px; /* espaço nas laterais */
+    box-sizing: border-box;
+    overflow: hidden;
+}
+ 
+
+ .main-img-esquerda img{
+    width: 650px;
+     /* height: 100%;
+    object-fit: cover;*/ 
+    position: absolute;
+    bottom:0;
+    left: 0;
+    z-index: 2;
+
+ }
+ 
+ .main-img-direita img{
+    width: 600px;
+   /* height: 100%;
+    object-fit: cover;*/ 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
  }
